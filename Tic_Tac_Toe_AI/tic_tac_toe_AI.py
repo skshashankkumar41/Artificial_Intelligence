@@ -118,8 +118,8 @@ def random_player(board_state,side):
     moves=list(available_moves(board_state))
     return random.choice(moves)
 
-def min_max_player(board_state,side):
+def AI_player(board_state,side):
     return min_max(board_state,side,5)[1]
 
 
-play_game(random_player,min_max_player)
+play_game(random_player,AI_player)
